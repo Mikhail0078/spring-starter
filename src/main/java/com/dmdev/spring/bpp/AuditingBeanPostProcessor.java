@@ -16,7 +16,6 @@ public class AuditingBeanPostProcessor implements BeanPostProcessor {
         if (bean.getClass().isAnnotationPresent(Auditing.class)) {
             auditBeans.put(beanName, bean.getClass());
         }
-
         return bean;
     }
 
