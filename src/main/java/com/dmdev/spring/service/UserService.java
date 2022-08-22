@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    private final UserRepository userrepository;
+    private final UserRepository userRepository;
     private final CrudRepository<Integer, Company> companyRepository;
 
 
-    public UserService(UserRepository userrepository,
+    public UserService(UserRepository userRepository,
                        CrudRepository<Integer, Company> companyRepository) {
-        this.userrepository = userrepository;
+        this.userRepository = userRepository;
         this.companyRepository = companyRepository;
     }
 
